@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Zaměstnanec" HorizontalAlignment="Left" Margin="601,37,0,0" VerticalAlignment="Top"/>
+        <Label Content="Jméno" HorizontalAlignment="Left" Margin="510,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="jmeno" HorizontalAlignment="Left" Margin="581,79,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Příjmení" HorizontalAlignment="Left" Margin="502,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="prijmeni" HorizontalAlignment="Left" Margin="581,110,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="vzdelani" HorizontalAlignment="Left" Margin="581,170,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Základní"></ComboBoxItem>
+            <ComboBoxItem Content="Střední bez maturity"></ComboBoxItem>
+            <ComboBoxItem Content="Střední s maturitou"></ComboBoxItem>
+            <ComboBoxItem Content="Ing"></ComboBoxItem>
+            <ComboBoxItem Content="Mudr"></ComboBoxItem>
+        </ComboBox>
+        <Label Content="Rok narození" HorizontalAlignment="Left" Margin="476,137,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nejvyšší Dokončené vzdělání" HorizontalAlignment="Left" Margin="392,168,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="rok" HorizontalAlignment="Left" Margin="581,141,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Pracovní pozice" HorizontalAlignment="Left" Margin="462,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="pozice" HorizontalAlignment="Left" Margin="581,203,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Hrubý plat v kč" HorizontalAlignment="Left" Margin="465,230,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="plat" HorizontalAlignment="Left" Margin="581,234,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Mám vyplněno!" HorizontalAlignment="Left" Margin="595,273,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
